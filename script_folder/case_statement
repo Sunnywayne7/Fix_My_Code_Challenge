@@ -1,0 +1,27 @@
+#!/bin/bash
+
+vehicle=$1 #the expression here does not mean vehicle is $1 but it means that the first argument on the terminal is equal to the value of vehicle 
+
+#syntax for case statement is :
+# case expression in
+#  pattern1 )
+#   statements ;;
+#  pattern2 )
+#   statements ;;
+#  * )
+#   statements ;;
+#  esac
+
+case $vehicle in
+   "toyota" )
+echo "the value of $vehicle is 200" ;;
+   "ford" )
+echo "the value of $vehicle is 250" ;;
+   "benz" )
+echo "the value of $vehicle is 400" ;;
+   "mazda" )
+echo "the value of $vehicle is 900" ;;
+   * )
+echo "unknown vehicle" ;;
+esac
+  

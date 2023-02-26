@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo -e "Enter your age : \c"
+read age
+
+if [ "$age" -gt 20 -a "$age" -lt 50 ]
+#you can also write it in this way "if [ "$age" -gt 20 ] && [ "$age" -lt 50 ]" or if [[ "$age" -gt 20 && "$age" -lt 50 ]] they are also acceptable
+
+#for logical or you can use the "-o"flag
+then
+ echo "age is valid"
+else 
+ echo "age is invalid"
+fi

@@ -1,0 +1,19 @@
+#!/bin/bash
+count=10
+if [ $count -gt 20 ]
+then
+ echo "condition is true"
+else
+ echo "condition is false"
+fi
+
+word=abc
+if [ $word == "abf" ]
+then 
+  echo "you are on the right path"
+elif [ $word == "abc" ]
+then
+  echo "...and you might be right.who knows?"
+else
+  echo "you are on the wrong path....find your path now!!"
+fi

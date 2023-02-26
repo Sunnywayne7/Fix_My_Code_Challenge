@@ -1,0 +1,28 @@
+#!/bin/bash
+#in bash we use the read variable to read in a user input
+echo "Enter your name"
+read name
+echo "your name is $name"
+
+#if you want to read in multiple names you can do:
+echo "Enter your namnes :"
+read name1 name2 name3
+echo "your names are $name1 $name2 $name3"
+
+#if you want to read input on same line as the form you can add the -p flag
+#read -p "Enter you username :" username
+#if you want to enter a silent input for maybe a password you can use the -s flag
+#read -sp "Enter your password :" password
+#echo
+#echo "your username is $username"
+#echo "your password is $password"
+
+#if you want to read array as an input you can use the -a flag
+echo "Enter your names :"
+read -a names
+echo "your names are: ${names[0]} ${names[1]} ${names[2]}"
+
+#By default your input goes into a variable called $REPLY so you can read in input without assigning a variable
+#echo "name :"
+#read
+#echo "your name is $REPLY"

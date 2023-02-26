@@ -1,0 +1,16 @@
+#!/bin/bash
+#you can pass in argument on the command line by doing the following:
+echo "enter your arguments: \c"
+read args1 args2 args3 
+echo "your arguments are: " $0, $args1, $args2, $args3 
+
+#you can also pass in your argument as an array by doing the following: 
+args=("$@")
+echo "your arguments are :" ${args[0]} ${args[1]} ${args[2]}
+#note: if you pass in your arguments as an array your first arguments will be what you typed not the file name unlike when your arguments is not an array
+
+#if you want to print all your arguments at once without indexing you can do the following:
+echo $@
+
+#if you want to print the number of arguments you can do:
+echo $#

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+is=$(ls -1) 
+
+for i in $is;
+
+do
+
+echo "$is"
+
+done

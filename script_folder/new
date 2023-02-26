@@ -1,0 +1,5 @@
+#!/bin/bash
+name=sunday
+val=10
+echo the name of that cute guy is $name
+echo each of these oranges cost '#'$val per value

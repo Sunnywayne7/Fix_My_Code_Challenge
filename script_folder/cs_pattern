@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo -e "enter some character :\c"
+read value
+
+case $value in 
+   [a-z] ) #this expression means that the terminal should expect a small letter character
+echo "your small input is $value" ;;
+   [A-Z] ) #capital letter character
+echo "your  capital input is $value" ;;
+   [0-9] ) #number character
+echo "your number input is $value" ;;
+   ? ) #this expects a one special character
+echo  "your special input is $value" ;;
+  * ) #for multiple characters like a string 
+echo "invalid input" ;;
+esac

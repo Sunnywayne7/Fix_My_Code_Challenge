@@ -1,0 +1,12 @@
+#!/bin/bash
+
+num1=20
+num2=54
+
+echo $(( num1 + num2 ))
+echo $(( num1 - num2 ))
+echo $( expr $num1 \* $num2 )
+echo $(( num1 / num2 ))
+#another alternative is to use the expr 
+#note: when using the expr with * make sure you use it this way \*
+echo $( expr $num2 % $num1 )

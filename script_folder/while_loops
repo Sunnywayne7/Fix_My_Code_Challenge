@@ -1,0 +1,12 @@
+#!/bin/bash
+
+n=1
+
+while [ $n -le 2 ]
+do 
+  echo "$n"
+  (( n++ ))
+  sleep 1
+#the sleep command is used to give a pause to the loop
+#if your loop does not stop press ctrl c to exit the control 
+done

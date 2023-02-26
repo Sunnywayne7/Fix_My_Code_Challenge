@@ -1,0 +1,25 @@
+#/bin/bash
+
+num1=20.5
+num2=60.7
+
+#shell scripting does not support arithmetic operations on float numbers so in order to perform arithmetic operations on floating numbers we need to make use of bc
+
+echo "20.5+49.8" | bc
+echo $num2-num1 | bc
+echo "20.5/10.8" | bc
+
+#the above expression means that we are passing the strings on the left as an input for the bc
+#if we want to set the amount of decimal places we make use of the "scale" variable
+
+echo "scale=4;$num2/$num1" | bc
+
+#always use the scale variable when dividing a float number
+
+#to find the square root of a number you can use the "sqrt" function and then include the math library with the "-l" flag
+
+num=30
+echo "scale=2;sqrt($num)" | bc -l
+
+#to find the power of a number you can use the ^ symbol
+echo "scale=3;$num^$num" | bc -l

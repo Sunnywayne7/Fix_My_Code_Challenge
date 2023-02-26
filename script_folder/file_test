@@ -1,0 +1,52 @@
+#!/bin/bash
+echo -e "Enter the name of your file :\c"
+#Here the flag "-e" enables "\c" to keep the cursor on the same line
+read file_name
+
+if [ -e $file_name ]
+#Here the flag "-e" is used to check if the file exist in the folder or not
+then
+  echo "$file_name found"
+else
+  echo "$file_name not found"
+fi
+
+if [ -f $file_name ]
+#Here the flag "-f" is used to check if the file exist and its a regular file or not
+then
+  echo "$file_name found"
+else
+  echo "$file_name not found"
+fi
+
+
+
+echo -e "Enter the name of your directory :\c"
+read dir_name
+
+if [ -d $dir_name ]
+#Here the flag "-d" is used to check if the directory exist in the folder or not
+then
+  echo "$dir_name found"
+else
+  echo "$dir_name not found"
+fi
+
+
+echo -e "Enter the name of your file :\c"
+read file_name
+
+if [ -s $file_name ]
+#Here the flag "-s" is used to check if the file empty or not
+then
+  echo "$file_name not empty"
+else
+  echo "$file_name empty"
+fi
+
+
+#there are two types of files basically...block special file and character special file
+#a character special file is a normal file which contains some text or data while..
+#a block special file is a binary file for example or a picture file or a video file
+#to check for block special file you can use the flag -b while for character special file you can use the flag -c
+#you can also use the "-r", "-w", "-x" to check if your file has the read write or execute permission

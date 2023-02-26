@@ -1,0 +1,11 @@
+#!/bin/bash
+
+os=('ubuntu' 'linux' 'windows')
+
+os[3]='mac' #to add at index 3
+echo "${os[@]}" #to print all elements of the array
+echo "${os[0]}" #to print the first element  of the array
+echo "${!os[@]}" #to print all the numbers of the indexes
+echo "${#os[@]}" #to print the length of the string
+#to remove an element from an array we use the unset keyword...for example:
+unset os[1]
